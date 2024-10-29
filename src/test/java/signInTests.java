@@ -18,6 +18,7 @@ public class signInTests {
     String invalidPassword = "abcd123456";
     String expectedAccountDeleteHeader = "ACCOUNT DELETED!";
 //    String expectedLoginSuccessMessage = "Logged in as";
+    String test = "test";
     String expectedLoginErrorMessage = "Your email or password is incorrect!";
 
     @BeforeMethod
