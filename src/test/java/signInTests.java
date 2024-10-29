@@ -11,7 +11,7 @@ public class signInTests {
     String URL = "https://automationexercise.com/";
     String expectedHomePageHeader = "CATEGORY";
     String expectedLoginPageHeader = "Login to your account";
-    String validEmail = "khalilabdalla888@gmail.com";
+    String validEmail = "khalilabdalla999@gmail.com";
     String validPassword = "abdallah";
     String invalidEmail = "seifahmed@gmail.com";
     String invalidPassword = "abcd123456";
