@@ -8,13 +8,13 @@ public class signInPage {
 
     WebDriver driver;
 
-    //Constructor
+    //CONSTRUCTOR
     public signInPage(WebDriver driver){
         this.driver = driver;
     }
 
 
-    //Element Locators
+    //ELEMENT LOCATORS
     private By homePageHeader = By.xpath("//div[@class=\"left-sidebar\"]//h2");
     private By loginTabButton = By.xpath("//a[@href=\"/login\"]");
     private By loginPageHeader = By.xpath("//div[@class=\"login-form\"]//h2");
@@ -27,7 +27,7 @@ public class signInPage {
     private By accountDeletePageHeader = By.xpath("//h2[@data-qa=\"account-deleted\"]//b");
 
 
-    //Actions
+    //ACTIONS
     public void navigateToURL(String URL){
         driver.get(URL);
     }
@@ -58,7 +58,7 @@ public class signInPage {
     }
 
 
-    //Assertions
+    //ASSERTIONS
     public void assertOnHomePageHeader(String expectedHomePageHeader){
         String actualHomePageHeader = driver.findElement(homePageHeader).getText();
         Assert.assertEquals(actualHomePageHeader, expectedHomePageHeader);
