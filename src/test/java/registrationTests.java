@@ -11,7 +11,7 @@ public class registrationTests {
     String URL = "https://automationexercise.com/";
     String expectedHomePageHeader = "FEATURES ITEMS";
     String expectedSignupPageHeader = "New User Signup!";
-    String email = "khalilabdalla878@gmail.com";
+    String email = "khalilabdalla97@gmail.com";
     String registeredEmail = "khalilabdalla86@gmail.com";
     String name = "abdallah";
     String password = "abc1010";
