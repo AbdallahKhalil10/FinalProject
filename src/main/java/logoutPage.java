@@ -2,14 +2,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import java.sql.Driver;
-
-public class signInPage {
-
+public class logoutPage {
     WebDriver driver;
 
+
     //CONSTRUCTOR
-    public signInPage(WebDriver driver){
+    public logoutPage(WebDriver driver){
         this.driver = driver;
     }
 
@@ -21,14 +19,13 @@ public class signInPage {
     private By emailTextField = By.xpath("//input[@data-qa=\"login-email\"]");
     private By passwordTextField = By.xpath("//input[@data-qa=\"login-password\"]");
     private By loginButton = By.xpath("//button[@data-qa=\"login-button\"]");
-    private By loginSuccessMessage = By.xpath("//*[text()='Logged in as']");
-    private By loginErrorMessage = By.xpath("//p[@style=\"color: red;\"]");
-    private By deleteAccountTabButton = By.xpath("//a[@href=\"/delete_account\"]");
-    private By accountDeletePageHeader = By.xpath("//h2[@data-qa=\"account-deleted\"]//b");
+    private By loggedInHeader = By.xpath("//a[text()=' Logged in as ']");
+    private By logoutTabButton = By.xpath("//a[@href=\"/logout\"]");
+
 
 
     //ACTIONS
-    public void navigateToURL(String URL){
+    public void navigateToURL (String URL){
         driver.get(URL);
     }
 
@@ -53,8 +50,8 @@ public class signInPage {
         driver.findElement(loginButton).click();
     }
 
-    public void clickDeleteAccountTabButton(){
-        driver.findElement(deleteAccountTabButton).click();
+    public void clickLogoutTabButton(){
+        driver.findElement(logoutTabButton).click();
     }
 
 
@@ -69,22 +66,8 @@ public class signInPage {
         Assert.assertEquals(actualLoginPageHeader, expectedLoginPageHeader);
     }
 
-    public void assertOnLoginSuccessMessage(String expectedLoginSuccessMessage){
-        String actualLoginSuccessMessage = driver.findElement(loginSuccessMessage).getText();
-        Assert.assertEquals(actualLoginSuccessMessage, expectedLoginSuccessMessage);
+    public void assertOnLoggedInHeader(String expectedLoggedInHeader){
+        String actualLoggedInHeader = driver.findElement(loggedInHeader).getText();
+        Assert.assertEquals(actualLoggedInHeader, expectedLoggedInHeader);
     }
-
-    public void assertOnLoginErrorMessage(String expectedLoginErrorMessage){
-        String actualLoginErrorMessage = driver.findElement(loginErrorMessage).getText();
-        Assert.assertEquals(actualLoginErrorMessage, expectedLoginErrorMessage);
-    }
-
-    public void assertOnAccountDeletePageHeader(String expectedAccountDeleteHeader){
-        String actualAccountDeleteHeader = driver.findElement(accountDeletePageHeader).getText();
-        Assert.assertEquals(actualAccountDeleteHeader, expectedAccountDeleteHeader);
-    }
-
-
-
-
 }

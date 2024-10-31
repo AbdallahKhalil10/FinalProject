@@ -11,7 +11,8 @@ public class registrationTests {
     String URL = "https://automationexercise.com/";
     String expectedHomePageHeader = "FEATURES ITEMS";
     String expectedSignupPageHeader = "New User Signup!";
-    String email = "khalilabdalla885@gmail.com";
+    String email = "khalilabdalla878@gmail.com";
+    String registeredEmail = "khalilabdalla86@gmail.com";
     String name = "abdallah";
     String password = "abc1010";
     String expectedRegistrationPageHeader = "ENTER ACCOUNT INFORMATION";
@@ -30,6 +31,7 @@ public class registrationTests {
     String expectedAccountCreationHeader = "ACCOUNT CREATED!";
     String expectedLoggedInHeader = "Logged in as abdallah";
     String expectedAccountDeleteHeader = "ACCOUNT DELETED!";
+    String expectedSignupErrorMessage = "Email Address already exist!";
 
 
     @BeforeMethod
@@ -71,6 +73,14 @@ public class registrationTests {
         registrationObject.assertOnLoggedInHeader(expectedLoggedInHeader);
         registrationObject.clickDeleteAccountTabButton();
         registrationObject.assertOnAccountDeleteHeader(expectedAccountDeleteHeader);
+    }
+
+    @Test
+    public void registrationTC02(){
+        registrationObject.assertOnSignupPageHeader(expectedSignupPageHeader);
+        registrationObject.fillAllData(registeredEmail, name);
+        registrationObject.clickSignupButton();
+        registrationObject.assertOnSignupErrorMessage(expectedSignupErrorMessage);
     }
 
     @AfterMethod
