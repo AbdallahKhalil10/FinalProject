@@ -21,6 +21,7 @@ public class registrationPage {
     private By nameTextField = By.xpath("//input[@data-qa=\"signup-name\"]");
     private By emailTextField = By.xpath("//input[@data-qa=\"signup-email\"]");
     private By signupButton = By.xpath("//button[@data-qa=\"signup-button\"]");
+    private By signupErrorMessage = By.xpath("//p[@style=\"color: red;\"]");
     private By registerPageHeader = By.xpath("//b[text()='Enter Account Information']");
     private By maleGenderSelection = By.xpath("//input[@id=\"id_gender1\"]");
     private By femaleGenderSelection = By.xpath("//input[@id=\"id_gender2\"]");
@@ -172,6 +173,11 @@ public class registrationPage {
     public void assertOnSignupPageHeader(String expectedSignupPageHeader){
         String actualSignupPageHeader = driver.findElement(signupPageHeader).getText();
         Assert.assertEquals(actualSignupPageHeader, expectedSignupPageHeader);
+    }
+
+    public void assertOnSignupErrorMessage(String expectedSignupErrorMessage){
+        String actualSignupErrorMessage = driver.findElement(signupErrorMessage).getText();
+        Assert.assertEquals(actualSignupErrorMessage, expectedSignupErrorMessage);
     }
 
     public void assertOnRegistrationPageHeader(String expectedRegisterPageHeader){
