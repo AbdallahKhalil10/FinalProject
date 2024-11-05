@@ -4,9 +4,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class signInTests {
+public class loginTests {
     WebDriver driver;
-    signInPage LoginObject;
+    loginPage LoginObject;
 
 
     String URL = "https://automationexercise.com/";
@@ -24,7 +24,7 @@ public class signInTests {
     public void setUp(){
         driver = new EdgeDriver();
         driver.manage().window().maximize();
-        LoginObject = new signInPage(driver);
+        LoginObject = new loginPage(driver);
         LoginObject.navigateToURL(URL);
         LoginObject.assertOnHomePageHeader(expectedHomePageHeader);
         LoginObject.clickLoginTabButton();

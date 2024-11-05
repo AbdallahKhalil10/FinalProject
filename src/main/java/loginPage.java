@@ -2,14 +2,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import java.sql.Driver;
-
-public class signInPage {
+public class loginPage {
 
     WebDriver driver;
 
     //CONSTRUCTOR
-    public signInPage(WebDriver driver){
+    public loginPage(WebDriver driver){
         this.driver = driver;
     }
 
