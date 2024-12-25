@@ -85,7 +85,6 @@ public class checkoutTests {
         checkoutObject.clickContinueButton();
         checkoutObject.clickCartTabButton();
         checkoutObject.clickProceedToCheckoutButton();
-
         checkoutObject.fillCommentTextArea(comment);
         checkoutObject.clickPlaceOrderButton();
         checkoutObject.fillNameOnCardTextField(nameOnCard);
