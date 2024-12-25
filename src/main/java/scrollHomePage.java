@@ -1,6 +1,5 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -17,6 +16,7 @@ public class scrollHomePage {
     private By subscriptionHeader = By.xpath("//div[@class=\"single-widget\"]//h2");
     private By scrollUpArrowButton = By.xpath("//a[@id=\"scrollUp\"]");
     private By scrollUpHeader = By.xpath("//div[@class=\"col-sm-6\"]//h2");
+
 
     //ACTIONS
     public void navigateToURL(String URL){
@@ -40,6 +40,7 @@ public class scrollHomePage {
     public void clickScrollUpArrowButton(){
         driver.findElement(scrollUpArrowButton).click();
     }
+
 
     //ASSERTIONS
     public void assertOnHomePageHeader(String expectedHomePageHeader){
