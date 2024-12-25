@@ -27,8 +27,6 @@ public class reviewPage {
     private By reviewSuccessMessage = By.xpath("//span[@style=\"font-size: 20px;\"]");
 
 
-
-
     //ACTIONS
     public void navigateToURL(String URL){
         driver.get(URL);
