@@ -31,27 +31,21 @@ public class reviewPage {
     public void navigateToURL(String URL){
         driver.get(URL);
     }
-
     public void clickProductsTabButton(){
         driver.findElement(productsTabButton).click();
     }
-
     public void clickViewProductButton(){
         driver.findElement(viewProductButton).click();
     }
-
     public void fillReviewerName(String reviewerName){
         driver.findElement(reviewerNameTextField).sendKeys(reviewerName);
     }
-
     public void fillReviewerEmail(String reviewerEmail){
         driver.findElement(reviewerEmailTextField).sendKeys(reviewerEmail);
     }
-
     public void fillTheReview(String review){
         driver.findElement(reviewTextField).sendKeys(review);
     }
-
     public void clickSubmitReviewButton(){
         driver.findElement(submitReviewButton).click();
     }
