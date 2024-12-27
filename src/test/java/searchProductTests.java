@@ -11,7 +11,7 @@ public class searchProductTests {
     String URL = "https://automationexercise.com/";
     String expectedHomePageHeader = "FEATURES ITEMS";
     String expectedProductPageHeader = "ALL PRODUCTS";
-    String expectedCartPageHeader = "Blue Top";
+    String expectedCartPageHeaderAfterSearch = "Blue Top";
     String productName = "Blue";
     String loggedinEmail = "khalil@gmail.com";
     String loggedinPassword = "abdallah";
@@ -38,13 +38,13 @@ public class searchProductTests {
         searchProductObject.assertOnPopupWindow();
         searchProductObject.clickContinueShoppingButton();
         searchProductObject.clickCartTabButton();
-        searchProductObject.assertOnCartPageHeader(expectedCartPageHeader);
+        searchProductObject.assertOnCartPageHeader(expectedCartPageHeaderAfterSearch);
         searchProductObject.clickLoginTabButton();
         searchProductObject.fillEmailTextField(loggedinEmail);
         searchProductObject.fillPasswordTextField(loggedinPassword);
         searchProductObject.clickLoginButton();
         searchProductObject.clickCartTabButton();
-        searchProductObject.assertOnCartPageHeader(expectedCartPageHeader);
+        searchProductObject.assertOnCartPageHeader(expectedCartPageHeaderAfterSearch);
     }
 
     @AfterMethod
