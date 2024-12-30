@@ -2,6 +2,9 @@
 
 ## Selenium Framework Test Cases
 
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.selenium.dev%2F&psig=AOvVaw390LoxjtGr-KVExIB7LMmu&ust=1735651384609000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJjlnbnLz4oDFQAAAAAdAAAAABAJ" width="200">
+
+
 This project utilizes the Selenium framework to automate the following test cases:
 
 ## • 𝑼𝒔𝒆𝒓 𝑴𝒂𝒏𝒂𝒈𝒆𝒎𝒆𝒏𝒕
