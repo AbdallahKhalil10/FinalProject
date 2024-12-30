@@ -2,8 +2,7 @@
 
 ## Selenium Framework Test Cases
 
-<img src="C:\Users\PC\Downloads" width="200">
-
+![selenium_4_logo](https://github.com/user-attachments/assets/6fecbad5-3e0a-4e1f-8648-f97f53c35476)
 
 This project utilizes the Selenium framework to automate the following test cases:
 
