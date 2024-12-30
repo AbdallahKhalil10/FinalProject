@@ -2,7 +2,7 @@
 
 ## Selenium Framework Test Cases
 
-<img src="C:\Users\PC\Downloads\selenium_4_logo.png" width="200">
+<img src="https://www.google.com/search?q=selenium+framework+logo&sca_esv=3601aab352553dda&udm=2&biw=1242&bih=606&sxsrf=ADLYWILihvBSMSS7E5ZSGPUOTeTriOAFbA%3A1735564965499&ei=pZ5yZ_aWHq6HkdUP-_ytkAw&ved=0ahUKEwi2_YKqy8-KAxWuQ6QEHXt-C8IQ4dUDCBE&uact=5&oq=selenium+framework+logo&gs_lp=EgNpbWciF3NlbGVuaXVtIGZyYW1ld29yayBsb2dvMgQQABgeSLISUO0BWJANcAF4AJABAJgBfaAB0ASqAQMwLjW4AQPIAQD4AQGYAgagAooFwgIKEAAYgAQYQxiKBcICBhAAGAcYHsICBRAAGIAEwgIGEAAYCBgemAMAiAYBkgcDMS41oAfWEw&sclient=img#vhid=Ny4o9nnV8JCWnM&vssid=llr" width="200">
 
 
 This project utilizes the Selenium framework to automate the following test cases:
