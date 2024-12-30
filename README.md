@@ -83,4 +83,4 @@ Verify Scroll Up without 'Arrow' button and Scroll Down functionality - Test scr
 • Test Execution: Automated tests for web applications
 
 
-# [Click Me to Go to GitHub](https://github.com/AbdallahKhalil10/FinalProject.git)
+# [Click Me to Go to My Github Page](https://github.com/AbdallahKhalil10)
